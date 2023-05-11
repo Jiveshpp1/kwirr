@@ -37,3 +37,8 @@ function rediectToRoomName(){
   localStorage.setItem("room_name",Room_names);
   window.location = "kiwtterpage.html";
 }
+function logOut(){
+  localStorage.removeItem("room_name");
+  localStorage.removeItem("user_name");
+  window.location = "login.html";
+}
